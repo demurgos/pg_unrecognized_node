@@ -2,14 +2,21 @@
 
 # Quick start
 
-Requires Rust, [get Rust with Rustup](https://rustup.rs/).
+1. Install Rust (recommended method: [use rustup](https://rustup.rs/)).
+2. Clone the repo:
 
-```
-git clone https://github.com/demurgos/pg_unrecognized_node.git
-cd pg_unrecognized_node
-# Edit the connection options in `src/main.rs`
-cargo run
-```
+   ```
+   git clone https://github.com/demurgos/pg_unrecognized_node.git
+   cd pg_unrecognized_node
+   ```
+
+3. Create a fresh Postgres database
+4. Fill the connection options in `src/main.rs`
+5. Run it
+
+   ```
+   cargo run
+   ```
 
 # Description
 
@@ -29,7 +36,7 @@ are:
 - `unrecognized node type: 123`
 
 I mostly get the node types above but roughly 5% of the time I get other types such as:
-s
+
 - `unrecognized node type: 16`
 - `unrecognized node type: 32`
 
