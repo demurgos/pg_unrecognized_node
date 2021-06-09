@@ -1,6 +1,23 @@
 # Postgres unrecognized node bug reproduction
 
-# Quick start
+# C Quick start
+
+1. Clone and build the repo:
+
+   ```
+   git clone https://github.com/demurgos/pg_unrecognized_node.git
+   cd pg_unrecognized_node
+   gcc -lpq -o main main.c
+   ```
+
+2. Create a fresh Postgres database
+3. Run it
+
+   ```
+   PGUSER=test PGPASSWORD=test PGDATABASE=test ./main
+   ```
+
+# Rust Quick start
 
 1. Install Rust (recommended method: [use rustup](https://rustup.rs/)).
 2. Clone the repo:

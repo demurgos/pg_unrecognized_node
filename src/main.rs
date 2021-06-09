@@ -1,6 +1,8 @@
-use sqlx::{Connection, PgConnection};
+use futures_util::stream::TryStreamExt;
+use sqlx::{Connection, PgConnection, Executor};
 use sqlx::postgres::PgConnectOptions;
 use std::error::Error;
+use futures_util::FutureExt;
 
 #[tokio::main]
 async fn main() {

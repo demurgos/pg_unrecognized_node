@@ -1,0 +1,193 @@
+Jun 09 20:31:05 red systemd[1]: Starting PostgreSQL database server...
+Jun 09 20:31:05 red postgres[1658715]: 2021-06-09 20:31:05.452 CEST [1658715] DEBUG:  registering background worker "logical replication launcher"
+Jun 09 20:31:05 red postgres[1658715]: 2021-06-09 20:31:05.452 CEST [1658715] DEBUG:  mmap(150994944) with MAP_HUGETLB failed, huge pages disabled: Cannot allocate memory
+Jun 09 20:31:05 red postgres[1658715]: 2021-06-09 20:31:05.463 CEST [1658715] LOG:  starting PostgreSQL 13.3 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 11.1.0, 64-bit
+Jun 09 20:31:05 red postgres[1658715]: 2021-06-09 20:31:05.463 CEST [1658715] LOG:  listening on IPv6 address "::1", port 5432
+Jun 09 20:31:05 red postgres[1658715]: 2021-06-09 20:31:05.468 CEST [1658715] LOG:  listening on Unix socket "/run/postgresql/.s.PGSQL.5432"
+Jun 09 20:31:05 red postgres[1658716]: 2021-06-09 20:31:05.522 CEST [1658716] LOG:  database system was shut down at 2021-06-09 20:31:05 CEST
+Jun 09 20:31:05 red postgres[1658716]: 2021-06-09 20:31:05.522 CEST [1658716] DEBUG:  checkpoint record is at 8/1348A640
+Jun 09 20:31:05 red postgres[1658716]: 2021-06-09 20:31:05.523 CEST [1658716] DEBUG:  redo record is at 8/1348A640; shutdown true
+Jun 09 20:31:05 red postgres[1658716]: 2021-06-09 20:31:05.523 CEST [1658716] DEBUG:  next transaction ID: 403052; next OID: 16782047
+Jun 09 20:31:05 red postgres[1658716]: 2021-06-09 20:31:05.523 CEST [1658716] DEBUG:  next MultiXactId: 1; next MultiXactOffset: 0
+Jun 09 20:31:05 red postgres[1658716]: 2021-06-09 20:31:05.523 CEST [1658716] DEBUG:  oldest unfrozen transaction ID: 479, in database 16855
+Jun 09 20:31:05 red postgres[1658716]: 2021-06-09 20:31:05.523 CEST [1658716] DEBUG:  oldest MultiXactId: 1, in database 16855
+Jun 09 20:31:05 red postgres[1658716]: 2021-06-09 20:31:05.523 CEST [1658716] DEBUG:  commit timestamp Xid oldest/newest: 0/0
+Jun 09 20:31:05 red postgres[1658716]: 2021-06-09 20:31:05.523 CEST [1658716] DEBUG:  transaction ID wrap limit is 2147484126, limited by database with OID 16855
+Jun 09 20:31:05 red postgres[1658716]: 2021-06-09 20:31:05.523 CEST [1658716] DEBUG:  MultiXactId wrap limit is 2147483648, limited by database with OID 16855
+Jun 09 20:31:05 red postgres[1658716]: 2021-06-09 20:31:05.523 CEST [1658716] DEBUG:  starting up replication slots
+Jun 09 20:31:05 red postgres[1658716]: 2021-06-09 20:31:05.524 CEST [1658716] DEBUG:  MultiXactId wrap limit is 2147483648, limited by database with OID 16855
+Jun 09 20:31:05 red postgres[1658716]: 2021-06-09 20:31:05.524 CEST [1658716] DEBUG:  MultiXact member stop limit is now 4294914944 based on MultiXact 1
+Jun 09 20:31:05 red postgres[1658720]: 2021-06-09 20:31:05.533 CEST [1658720] DEBUG:  autovacuum launcher started
+Jun 09 20:31:05 red postgres[1658715]: 2021-06-09 20:31:05.534 CEST [1658715] DEBUG:  starting background worker process "logical replication launcher"
+Jun 09 20:31:05 red postgres[1658715]: 2021-06-09 20:31:05.534 CEST [1658715] LOG:  database system is ready to accept connections
+Jun 09 20:31:05 red postgres[1658722]: 2021-06-09 20:31:05.535 CEST [1658722] DEBUG:  logical replication launcher started
+Jun 09 20:31:05 red systemd[1]: Started PostgreSQL database server.
+Jun 09 20:31:24 red postgres[1658863]: 2021-06-09 20:31:24.161 CEST [1658863] LOG:  parse tree:
+Jun 09 20:31:24 red postgres[1658863]: 2021-06-09 20:31:24.161 CEST [1658863] DETAIL:     {QUERY
+Jun 09 20:31:24 red postgres[1658863]:            :commandType 5
+Jun 09 20:31:24 red postgres[1658863]:            :querySource 0
+Jun 09 20:31:24 red postgres[1658863]:            :canSetTag true
+Jun 09 20:31:24 red postgres[1658863]:            :utilityStmt ?
+Jun 09 20:31:24 red postgres[1658863]:            :resultRelation 0
+Jun 09 20:31:24 red postgres[1658863]:            :hasAggs false
+Jun 09 20:31:24 red postgres[1658863]:            :hasWindowFuncs false
+Jun 09 20:31:24 red postgres[1658863]:            :hasTargetSRFs false
+Jun 09 20:31:24 red postgres[1658863]:            :hasSubLinks false
+Jun 09 20:31:24 red postgres[1658863]:            :hasDistinctOn false
+Jun 09 20:31:24 red postgres[1658863]:            :hasRecursive false
+Jun 09 20:31:24 red postgres[1658863]:            :hasModifyingCTE false
+Jun 09 20:31:24 red postgres[1658863]:            :hasForUpdate false
+Jun 09 20:31:24 red postgres[1658863]:            :hasRowSecurity false
+Jun 09 20:31:24 red postgres[1658863]:            :cteList <>
+Jun 09 20:31:24 red postgres[1658863]:            :rtable <>
+Jun 09 20:31:24 red postgres[1658863]:            :jointree <>
+Jun 09 20:31:24 red postgres[1658863]:            :targetList <>
+Jun 09 20:31:24 red postgres[1658863]:            :override 0
+Jun 09 20:31:24 red postgres[1658863]:            :onConflict <>
+Jun 09 20:31:24 red postgres[1658863]:            :returningList <>
+Jun 09 20:31:24 red postgres[1658863]:            :groupClause <>
+Jun 09 20:31:24 red postgres[1658863]:            :groupingSets <>
+Jun 09 20:31:24 red postgres[1658863]:            :havingQual <>
+Jun 09 20:31:24 red postgres[1658863]:            :windowClause <>
+Jun 09 20:31:24 red postgres[1658863]:            :distinctClause <>
+Jun 09 20:31:24 red postgres[1658863]:            :sortClause <>
+Jun 09 20:31:24 red postgres[1658863]:            :limitOffset <>
+Jun 09 20:31:24 red postgres[1658863]:            :limitCount <>
+Jun 09 20:31:24 red postgres[1658863]:            :limitOption 0
+Jun 09 20:31:24 red postgres[1658863]:            :rowMarks <>
+Jun 09 20:31:24 red postgres[1658863]:            :setOperations <>
+Jun 09 20:31:24 red postgres[1658863]:            :constraintDeps <>
+Jun 09 20:31:24 red postgres[1658863]:            :withCheckOptions <>
+Jun 09 20:31:24 red postgres[1658863]:            :stmt_location 0
+Jun 09 20:31:24 red postgres[1658863]:            :stmt_len 33
+Jun 09 20:31:24 red postgres[1658863]:            }
+Jun 09 20:31:24 red postgres[1658863]:
+Jun 09 20:31:24 red postgres[1658863]: 2021-06-09 20:31:24.161 CEST [1658863] STATEMENT:  DROP DOMAIN IF EXISTS schema_meta;
+Jun 09 20:31:24 red postgres[1658863]: 2021-06-09 20:31:24.163 CEST [1658863] NOTICE:  type "schema_meta" does not exist, skipping
+Jun 09 20:31:24 red postgres[1658863]: 2021-06-09 20:31:24.164 CEST [1658863] LOG:  parse tree:
+Jun 09 20:31:24 red postgres[1658863]: 2021-06-09 20:31:24.164 CEST [1658863] DETAIL:     {QUERY
+Jun 09 20:31:24 red postgres[1658863]:            :commandType 5
+Jun 09 20:31:24 red postgres[1658863]:            :querySource 0
+Jun 09 20:31:24 red postgres[1658863]:            :canSetTag true
+Jun 09 20:31:24 red postgres[1658863]:            :utilityStmt ?
+Jun 09 20:31:24 red postgres[1658863]:            :resultRelation 0
+Jun 09 20:31:24 red postgres[1658863]:            :hasAggs false
+Jun 09 20:31:24 red postgres[1658863]:            :hasWindowFuncs false
+Jun 09 20:31:24 red postgres[1658863]:            :hasTargetSRFs false
+Jun 09 20:31:24 red postgres[1658863]:            :hasSubLinks false
+Jun 09 20:31:24 red postgres[1658863]:            :hasDistinctOn false
+Jun 09 20:31:24 red postgres[1658863]:            :hasRecursive false
+Jun 09 20:31:24 red postgres[1658863]:            :hasModifyingCTE false
+Jun 09 20:31:24 red postgres[1658863]:            :hasForUpdate false
+Jun 09 20:31:24 red postgres[1658863]:            :hasRowSecurity false
+Jun 09 20:31:24 red postgres[1658863]:            :cteList <>
+Jun 09 20:31:24 red postgres[1658863]:            :rtable <>
+Jun 09 20:31:24 red postgres[1658863]:            :jointree <>
+Jun 09 20:31:24 red postgres[1658863]:            :targetList <>
+Jun 09 20:31:24 red postgres[1658863]:            :override 0
+Jun 09 20:31:24 red postgres[1658863]:            :onConflict <>
+Jun 09 20:31:24 red postgres[1658863]:            :returningList <>
+Jun 09 20:31:24 red postgres[1658863]:            :groupClause <>
+Jun 09 20:31:24 red postgres[1658863]:            :groupingSets <>
+Jun 09 20:31:24 red postgres[1658863]:            :havingQual <>
+Jun 09 20:31:24 red postgres[1658863]:            :windowClause <>
+Jun 09 20:31:24 red postgres[1658863]:            :distinctClause <>
+Jun 09 20:31:24 red postgres[1658863]:            :sortClause <>
+Jun 09 20:31:24 red postgres[1658863]:            :limitOffset <>
+Jun 09 20:31:24 red postgres[1658863]:            :limitCount <>
+Jun 09 20:31:24 red postgres[1658863]:            :limitOption 0
+Jun 09 20:31:24 red postgres[1658863]:            :rowMarks <>
+Jun 09 20:31:24 red postgres[1658863]:            :setOperations <>
+Jun 09 20:31:24 red postgres[1658863]:            :constraintDeps <>
+Jun 09 20:31:24 red postgres[1658863]:            :withCheckOptions <>
+Jun 09 20:31:24 red postgres[1658863]:            :stmt_location 0
+Jun 09 20:31:24 red postgres[1658863]:            :stmt_len 35
+Jun 09 20:31:24 red postgres[1658863]:            }
+Jun 09 20:31:24 red postgres[1658863]:
+Jun 09 20:31:24 red postgres[1658863]: 2021-06-09 20:31:24.164 CEST [1658863] STATEMENT:  DROP TYPE IF EXISTS raw_schema_meta;
+Jun 09 20:31:24 red postgres[1658863]: 2021-06-09 20:31:24.172 CEST [1658863] LOG:  parse tree:
+Jun 09 20:31:24 red postgres[1658863]: 2021-06-09 20:31:24.172 CEST [1658863] DETAIL:     {QUERY
+Jun 09 20:31:24 red postgres[1658863]:            :commandType 5
+Jun 09 20:31:24 red postgres[1658863]:            :querySource 0
+Jun 09 20:31:24 red postgres[1658863]:            :canSetTag true
+Jun 09 20:31:24 red postgres[1658863]:            :utilityStmt ?
+Jun 09 20:31:24 red postgres[1658863]:            :resultRelation 0
+Jun 09 20:31:24 red postgres[1658863]:            :hasAggs false
+Jun 09 20:31:24 red postgres[1658863]:            :hasWindowFuncs false
+Jun 09 20:31:24 red postgres[1658863]:            :hasTargetSRFs false
+Jun 09 20:31:24 red postgres[1658863]:            :hasSubLinks false
+Jun 09 20:31:24 red postgres[1658863]:            :hasDistinctOn false
+Jun 09 20:31:24 red postgres[1658863]:            :hasRecursive false
+Jun 09 20:31:24 red postgres[1658863]:            :hasModifyingCTE false
+Jun 09 20:31:24 red postgres[1658863]:            :hasForUpdate false
+Jun 09 20:31:24 red postgres[1658863]:            :hasRowSecurity false
+Jun 09 20:31:24 red postgres[1658863]:            :cteList <>
+Jun 09 20:31:24 red postgres[1658863]:            :rtable <>
+Jun 09 20:31:24 red postgres[1658863]:            :jointree <>
+Jun 09 20:31:24 red postgres[1658863]:            :targetList <>
+Jun 09 20:31:24 red postgres[1658863]:            :override 0
+Jun 09 20:31:24 red postgres[1658863]:            :onConflict <>
+Jun 09 20:31:24 red postgres[1658863]:            :returningList <>
+Jun 09 20:31:24 red postgres[1658863]:            :groupClause <>
+Jun 09 20:31:24 red postgres[1658863]:            :groupingSets <>
+Jun 09 20:31:24 red postgres[1658863]:            :havingQual <>
+Jun 09 20:31:24 red postgres[1658863]:            :windowClause <>
+Jun 09 20:31:24 red postgres[1658863]:            :distinctClause <>
+Jun 09 20:31:24 red postgres[1658863]:            :sortClause <>
+Jun 09 20:31:24 red postgres[1658863]:            :limitOffset <>
+Jun 09 20:31:24 red postgres[1658863]:            :limitCount <>
+Jun 09 20:31:24 red postgres[1658863]:            :limitOption 0
+Jun 09 20:31:24 red postgres[1658863]:            :rowMarks <>
+Jun 09 20:31:24 red postgres[1658863]:            :setOperations <>
+Jun 09 20:31:24 red postgres[1658863]:            :constraintDeps <>
+Jun 09 20:31:24 red postgres[1658863]:            :withCheckOptions <>
+Jun 09 20:31:24 red postgres[1658863]:            :stmt_location 0
+Jun 09 20:31:24 red postgres[1658863]:            :stmt_len 45
+Jun 09 20:31:24 red postgres[1658863]:            }
+Jun 09 20:31:24 red postgres[1658863]:
+Jun 09 20:31:24 red postgres[1658863]: 2021-06-09 20:31:24.172 CEST [1658863] STATEMENT:  CREATE TYPE raw_schema_meta AS (version int4);
+Jun 09 20:31:24 red postgres[1658863]: 2021-06-09 20:31:24.181 CEST [1658863] LOG:  parse tree:
+Jun 09 20:31:24 red postgres[1658863]: 2021-06-09 20:31:24.181 CEST [1658863] DETAIL:     {QUERY
+Jun 09 20:31:24 red postgres[1658863]:            :commandType 5
+Jun 09 20:31:24 red postgres[1658863]:            :querySource 0
+Jun 09 20:31:24 red postgres[1658863]:            :canSetTag true
+Jun 09 20:31:24 red postgres[1658863]:            :utilityStmt ?
+Jun 09 20:31:24 red postgres[1658863]:            :resultRelation 0
+Jun 09 20:31:24 red postgres[1658863]:            :hasAggs false
+Jun 09 20:31:24 red postgres[1658863]:            :hasWindowFuncs false
+Jun 09 20:31:24 red postgres[1658863]:            :hasTargetSRFs false
+Jun 09 20:31:24 red postgres[1658863]:            :hasSubLinks false
+Jun 09 20:31:24 red postgres[1658863]:            :hasDistinctOn false
+Jun 09 20:31:24 red postgres[1658863]:            :hasRecursive false
+Jun 09 20:31:24 red postgres[1658863]:            :hasModifyingCTE false
+Jun 09 20:31:24 red postgres[1658863]:            :hasForUpdate false
+Jun 09 20:31:24 red postgres[1658863]:            :hasRowSecurity false
+Jun 09 20:31:24 red postgres[1658863]:            :cteList <>
+Jun 09 20:31:24 red postgres[1658863]:            :rtable <>
+Jun 09 20:31:24 red postgres[1658863]:            :jointree <>
+Jun 09 20:31:24 red postgres[1658863]:            :targetList <>
+Jun 09 20:31:24 red postgres[1658863]:            :override 0
+Jun 09 20:31:24 red postgres[1658863]:            :onConflict <>
+Jun 09 20:31:24 red postgres[1658863]:            :returningList <>
+Jun 09 20:31:24 red postgres[1658863]:            :groupClause <>
+Jun 09 20:31:24 red postgres[1658863]:            :groupingSets <>
+Jun 09 20:31:24 red postgres[1658863]:            :havingQual <>
+Jun 09 20:31:24 red postgres[1658863]:            :windowClause <>
+Jun 09 20:31:24 red postgres[1658863]:            :distinctClause <>
+Jun 09 20:31:24 red postgres[1658863]:            :sortClause <>
+Jun 09 20:31:24 red postgres[1658863]:            :limitOffset <>
+Jun 09 20:31:24 red postgres[1658863]:            :limitCount <>
+Jun 09 20:31:24 red postgres[1658863]:            :limitOption 0
+Jun 09 20:31:24 red postgres[1658863]:            :rowMarks <>
+Jun 09 20:31:24 red postgres[1658863]:            :setOperations <>
+Jun 09 20:31:24 red postgres[1658863]:            :constraintDeps <>
+Jun 09 20:31:24 red postgres[1658863]:            :withCheckOptions <>
+Jun 09 20:31:24 red postgres[1658863]:            :stmt_location 0
+Jun 09 20:31:24 red postgres[1658863]:            :stmt_len 105
+Jun 09 20:31:24 red postgres[1658863]:            }
+Jun 09 20:31:24 red postgres[1658863]:
+Jun 09 20:31:24 red postgres[1658863]: 2021-06-09 20:31:24.181 CEST [1658863] STATEMENT:  CREATE DOMAIN schema_meta AS raw_schema_meta CHECK ((value).version IS NOT NULL AND (value).version >= 1);
+Jun 09 20:31:24 red postgres[1658863]: 2021-06-09 20:31:24.193 CEST [1658863] ERROR:  unrecognized node type: 16782051
+Jun 09 20:31:24 red postgres[1658863]: 2021-06-09 20:31:24.193 CEST [1658863] STATEMENT:  CREATE DOMAIN schema_meta AS raw_schema_meta CHECK ((value).version IS NOT NULL AND (value).version >= 1);
+Jun 09 20:31:24 red postgres[1658863]: 2021-06-09 20:31:24.194 CEST [1658863] LOG:  could not receive data from client: Connection reset by peer
+Jun 09 20:31:24 red postgres[1658863]: 2021-06-09 20:31:24.194 CEST [1658863] DEBUG:  unexpected EOF on client connection
