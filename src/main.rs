@@ -20,7 +20,6 @@ async fn migrate(con: &mut PgConnection) -> Result<(), Box<dyn Error>> {
   // It may imply that the issue seems related to having to parsing the `CHECK`
   // twice during the same session.
   let queries = [
-    "BEGIN;",
     "DROP DOMAIN IF EXISTS schema_meta;",
     "DROP TYPE IF EXISTS raw_schema_meta;",
     "CREATE TYPE raw_schema_meta AS (version int4);",
@@ -28,7 +27,6 @@ async fn migrate(con: &mut PgConnection) -> Result<(), Box<dyn Error>> {
     "DROP DOMAIN IF EXISTS schema_meta;",
     // The request below fails with the message `"unrecognized node type: X"`
     "CREATE DOMAIN schema_meta AS raw_schema_meta CHECK ((value).version IS NOT NULL AND (value).version >= 1);",
-    "COMMIT;"
   ];
 
   for query in std::array::IntoIter::new(queries) {
