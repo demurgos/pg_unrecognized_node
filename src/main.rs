@@ -24,21 +24,13 @@ async fn main() {
 
 async fn migrate(tx: &mut Transaction<'_, Postgres>) -> Result<(), Box<dyn Error>> {
   let queries = [
-    "DROP SCHEMA public CASCADE;",
-    "CREATE SCHEMA IF NOT EXISTS public;",
-    "DROP FUNCTION IF EXISTS get_schema_meta;",
-    "DROP TYPE IF EXISTS schema_meta;",
+    "DROP DOMAIN IF EXISTS schema_meta;",
     "DROP TYPE IF EXISTS raw_schema_meta;",
     "CREATE TYPE raw_schema_meta AS (version int4);",
     "CREATE DOMAIN schema_meta AS raw_schema_meta CHECK ((value).version IS NOT NULL AND (value).version >= 1);",
-    "CREATE FUNCTION get_schema_meta() RETURNS schema_meta LANGUAGE sql IMMUTABLE STRICT PARALLEL SAFE AS $$ SELECT ROW(1); $$;",
-    "DROP FUNCTION IF EXISTS get_schema_meta;",
-    "DROP TYPE IF EXISTS schema_meta;",
-    "DROP TYPE IF EXISTS raw_schema_meta;",
-    "CREATE TYPE raw_schema_meta AS (version int4);",
+    "DROP DOMAIN IF EXISTS schema_meta;",
     // The request below fails with the message `"unrecognized node type: X"`
     "CREATE DOMAIN schema_meta AS raw_schema_meta CHECK ((value).version IS NOT NULL AND (value).version >= 1);",
-    "CREATE FUNCTION get_schema_meta() RETURNS schema_meta LANGUAGE sql IMMUTABLE STRICT PARALLEL SAFE AS $$ SELECT ROW(2); $$;",
   ];
 
   for query in std::array::IntoIter::new(queries) {

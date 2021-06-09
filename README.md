@@ -39,6 +39,12 @@ I mostly get the node types above but roughly 5% of the time I get other types s
 
 - `unrecognized node type: 16`
 - `unrecognized node type: 32`
+- `unrecognized node type: 16781666`
+- `unrecognized node type: 16781674`
+- `unrecognized node type: 16781682`
+- `unrecognized node type: 16781690`
+- `unrecognized node type: 16781698`
+- `unrecognized node type: 16781706`
 
 # Environment
 
